@@ -30,7 +30,7 @@ window.addEventListener('load', function(){
     var searchBtn = document.getElementById('searchBtn');
     
     searchBtn.addEventListener('click', function(){
-        results.innerHTML = 'hola<br/>mundo <div>como estas</div>'; 
+        //results.innerHTML = 'hola<br/>mundo <div>como estas</div>'; 
         //get hobby
         var hobbyField = document.getElementById('hobby');
         var hobby = hobbyField.value;
@@ -39,5 +39,13 @@ window.addEventListener('load', function(){
         var genderField = document.getElementById('gender');
         var gender = genderField.options[genderField.selectedIndex].value;
         console.log(gender);
+            
+        var resultsHTML = '';
+        var numUsers = users.length;
+
+        for(var i=0; i<numUsers; i++){
+            resultsHTML = resultsHTML + ' ' + users[i].name;
+        }
+        results.innerHTML = resultsHTML;
     });
 });
