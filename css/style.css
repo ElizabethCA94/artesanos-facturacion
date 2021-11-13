@@ -3,20 +3,29 @@
     font-family: helvetica;
 
 }
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(216, 238, 238, 0.966); 
+}
+
 header{
     background-color: rgba(125, 171, 171, 0.966);  
 }
 
 nav{
-    display: flex;
-    align-content: center;
-    /* margin-right: 60px; */
-    padding: auto 80px;
+    display: inline-block;
+    padding: 0 80px;
     
 }
 
-ul{
+ul li{
     list-style: none;
+    align-content: flex-end;
+    text-align: right;
+    display: inline;
+    margin-left: 400px; 
     
 }
 
